@@ -1,3 +1,4 @@
+import { combineReducers } from 'redux';
 import TYPES from '../actions';
 
 const songsReducer = () => {
@@ -17,3 +18,8 @@ const selectedSongReducer = (selectedSong, action) => {
 
     return selectedSong;
 };
+
+export default combineReducers({
+    songs: songsReducer,
+    selectedSong: selectedSongReducer
+});
