@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import TYPES from '../actions';
+import TYPES from '../types';
 
 const songsReducer = () => {
     return [
@@ -10,7 +10,7 @@ const songsReducer = () => {
     ]
 };
 
-const selectedSongReducer = (selectedSong, action) => {
+const selectedSongReducer = (selectedSong = {}, action) => {
     if(action.type === TYPES.SELECTED_SONG)
     {
         return action.payload;
