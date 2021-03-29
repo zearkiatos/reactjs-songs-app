@@ -1,5 +1,5 @@
 const TYPES = {
-    SONG_SELECTED: 'SONG_SELECTED'
+    SELECTED_SONG: 'SELECTED_SONG'
 }
 
 export default TYPES;

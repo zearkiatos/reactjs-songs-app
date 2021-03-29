@@ -1,7 +1,7 @@
 import TYPES from '../types'
 export const selectSong = song => {
     return {
-        type: TYPES.SONG_SELECTED,
+        type: TYPES.SELECTED_SONG,
         payload: song
     }
 };
